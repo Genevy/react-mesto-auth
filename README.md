@@ -1,19 +1,18 @@
 <div align="center"><h3>Мesto on React: registration & authorization</h3></div>
-
-
-
+<br>
+<hr>
 <br>
 <p align="center">
-Проект <a href="https://github.com/Genevy/mesto-react#readme">Mesto на Реакте</a> с авторизацией и регистрацией.  
+Проект <a href="https://github.com/Genevy/mesto-react#readme">Mesto на Реакт</a> с авторизацией и регистрацией.  
 <br>
 <br>
 <a href="https://github.com/Genevy/mesto#readme">Место</a> — адаптивный, интерактивный сайт-сервис для добавления фотографий достопримечательностей и знаковых мест с возможностью регистрацией и авторизацией пользователя. В проекте была применена работа с макетом <a href="https://www.figma.com/file/5H3gsn5lIGPwzBPby9jAOo/JavaScript.-Sprint-12?node-id=0-1&t=T1Lrz5kfQbIaGUIg-0">Figma</a>, построение сложных сеток, разширенные возможности HTML и CSS с использованием JavaScript библиотеки React JS.
 </p>
 <br>
-<p align="center">🔎 Explore on <a href="https://genevy.github.io/react-mesto-aut/"><strong>GitHub Pages »</strong></a></p>
+<p align="center">🔎 Explore on <a href="https://genevy.github.io/react-mesto-auth/"><strong>GitHub Pages »</strong></a></p>
 <br>
-<a href="https://genevy.github.io/mesto-react/">
-  <img src="https://raw.githubusercontent.com/Genevy/react-mesto-auth/main/src/images/react-mesto-aut.png" alt="Иллюстрация к проекту Место регистрация и авторизация на React" width="100%">
+<a href="https://genevy.github.io/mesto-react-auth/">
+  <img src="https://raw.githubusercontent.com/Genevy/react-mesto-auth/main/src/images/react-mesto-auth.png" alt="Иллюстрация к проекту Место регистрация и авторизация на React" width="100%">
 </a>
 
 ### 🚀 Функционал
@@ -35,5 +34,7 @@
   * React JS
   * Webpack
   * API `POST`, `GET`, `PUT`, `DELETE`, `PATCH`
-
+<br>
+<hr>
+<br>
 © Developed by [Evgeny Striganov](https://github.com/genevy) feat. [Yandex Praktikum](https://practicum.yandex.ru/web/)
