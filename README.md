@@ -1,6 +1,6 @@
 <div align="center"><h3>Мesto on React: registration & authorization</h3></div>
 
-##
+
 
 <br>
 <p align="center">
@@ -35,6 +35,5 @@
   * React JS
   * Webpack
   * API `POST`, `GET`, `PUT`, `DELETE`, `PATCH`
-##
-####
+
 © Developed by [Evgeny Striganov](https://github.com/genevy) feat. [Yandex Praktikum](https://practicum.yandex.ru/web/)
