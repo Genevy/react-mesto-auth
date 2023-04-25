@@ -13,7 +13,7 @@
 <p align="center">🔎 Explore on <a href="https://genevy.github.io/react-mesto-auth/"><strong>GitHub Pages »</strong></a></p>
 <br>
 <a href="https://genevy.github.io/react-mesto-auth/"> 
-  <img src="https://raw.githubusercontent.com/Genevy/react-mesto-auth/main/src/images/react-mesto-authi.png" alt="Иллюстрация к проекту Место регистрация и авторизация на React" width="100%"> 
+  <img src="https://raw.githubusercontent.com/Genevy/react-mesto-auth/main/src/images/react-mesto-auth.png" alt="Иллюстрация к проекту Место регистрация и авторизация на React" width="100%"> 
 </a>
 
 ### 🚀 Функционал
