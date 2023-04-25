@@ -1,6 +1,3 @@
-<div align="center"><h3>Мesto on React: registration & authorization</h3></div>
-<br>
-<hr>
 <br>
 <p align="center">
 Проект <a href="https://github.com/Genevy/mesto-react#readme">Mesto на Реакт</a> с авторизацией и регистрацией.  
@@ -37,4 +34,7 @@
 <br>
 <hr>
 <br>
-© Developed by [Evgeny Striganov](https://github.com/genevy) feat. [Yandex Praktikum](https://practicum.yandex.ru/web/)
+<p>© Developed by <a href="https://github.com/genevy">Evgeny Striganov</a> feat. <a href="https://practicum.yandex.ru/web/">Yandex Praktikum</a></p>
+<br>
+
+
