@@ -4,7 +4,7 @@
 
 <br>
 <p align="center">
-Проект <a href="https://github.com/Genevy/mesto-react#readme">Mesto на Реакте</a> с авторизацией и регистрацией.  
+Проект <a href="https://github.com/Genevy/mesto-react#readme">Mesto на Реакт</a> с авторизацией и регистрацией.  
 <br>
 <br>
 <a href="https://github.com/Genevy/mesto#readme">Место</a> — адаптивный, интерактивный сайт-сервис для добавления фотографий достопримечательностей и знаковых мест с возможностью регистрацией и авторизацией пользователя. В проекте была применена работа с макетом <a href="https://www.figma.com/file/5H3gsn5lIGPwzBPby9jAOo/JavaScript.-Sprint-12?node-id=0-1&t=T1Lrz5kfQbIaGUIg-0">Figma</a>, построение сложных сеток, разширенные возможности HTML и CSS с использованием JavaScript библиотеки React JS.
