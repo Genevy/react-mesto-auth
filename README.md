@@ -37,4 +37,4 @@
   * API `POST`, `GET`, `PUT`, `DELETE`, `PATCH`
 ##
 ####
-© Developed by [Evgeny Striganov](https://github.com/genevy) feat. [Yandex Praktikum](https://practicum.yandex.ru/web/)
+© Developed by [Evgeny Striganov](https://github.com/genevy) jointly [Yandex Praktikum](https://practicum.yandex.ru/web/)
