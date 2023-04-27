@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Mesto",
+  "name": "Mesto on React: registration and authorization",
   "icons": [
     {
       "src": "favicon.ico",
