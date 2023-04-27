@@ -35,6 +35,11 @@
   * React JS
   * Webpack
   * API `POST`, `GET`, `PUT`, `DELETE`, `PATCH`
+  ### 🛠 Моддинг
+  * Добавление валидации форм.
+  * Улучшение UX закрытия модальных окон.
+  * Добавление мобильного меню "Hamburger".
+  * Добавление события "onError" для пользовательский изображений.
 ##
 ####
 © Developed by [Evgeny Striganov](https://github.com/genevy) jointly [Yandex Praktikum](https://practicum.yandex.ru/web/)
