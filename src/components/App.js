@@ -210,7 +210,8 @@ function App() {
         if (res && res.token) {
           setCurrentUser({ ...currentUser, email: loginData.email })
           localStorage.setItem('jwt', res.token);
-          checkToken();
+          setLoggedIn(true); 
+          navigate('/');
         }
       })
       .catch((err) => {
