@@ -17,28 +17,16 @@ import * as apiAuth from '../utils/apiAuth';
 import ProtectedRoute from './ProtectedRoute';
 
 function App() {
-  /* Переменные состояния попапов */
   const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = useState(false);
   const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = useState(false);
   const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = useState(false);
   const [isCardPopupOpen, setIsCardPopupOpen] = useState(false);
   const [isDeleteCardPopupOpen, setIsDeleteCardPopupOpen] = useState(false);
-  
   const [isRenderLoading, setIsRenderLoading] = useState(false);
-  
-  /* Переменная состояния для попапа открытия карточки */
   const [selectedCard, setSelectedCard] = useState({});
-  
-  /* Переменная состояния для попапа страницы регистрации */
   const [isInfoTooltipPopup, setIsInfoTooltipPopup] = useState(false);
-
-  /* Переменная состояния пользователя */
   const [currentUser, setCurrentUser] = useState(defaultCurrentUser);
-
-  /* Переменная состояния карточек */
   const [cards, setCards] = useState([]);
-
-  /* Переменные состояния зарегистрированного пользователя */
   const [loggedIn, setLoggedIn] = useState(false);
   const [isSignIn, setIsSignIn] = useState(true);
 
@@ -58,12 +46,10 @@ function App() {
     }
   }, [loggedIn])
 
-  /* Рендер загрузки */
   function renderLoading() {
     setIsRenderLoading((isRenderLoading) => !isRenderLoading);
   };
 
-  /* Открытие попапов */
   function handleEditAvatarClick() {
     setIsEditAvatarPopupOpen(true);
   }
@@ -98,10 +84,7 @@ function App() {
   }
 
   function handleCardLike(card) {
-    /* Снова проверить, есть ли уже лайк на этой карточке */
     const isLiked = card.likes.some(i => i._id === currentUser._id);
-    
-    /* Отправить запрос в API и получить обновлённые данные карточки */
     api.changeLikeCardStatus(card._id, !isLiked)
       .then((newCard) => {
         setCards((state) => state.map((c) => c._id === card._id ? newCard : c));
@@ -138,7 +121,6 @@ function App() {
       .finally(() => renderLoading())
   }
 
-  /* Изменить данные пользователя */
   function handleUpdateUser(userData) {
     api.updateUserInfo(userData)
       .then((userDataServer) => {
@@ -152,7 +134,6 @@ function App() {
       .finally(() => renderLoading())
   };
 
-  /* Изменить аватар пользователя */
   function handleUpdateAvatar(userAvatar) {
     api.updateUserAvatar(userAvatar)
       .then((userAvatarServer) => {
@@ -166,7 +147,6 @@ function App() {
       .finally(() => renderLoading())
   };
 
-  /* Получить токен */
   function checkToken() {
     const token = localStorage.getItem('jwt');
     if (token) {
@@ -188,7 +168,6 @@ function App() {
     checkToken();
   }, []);
 
-  /* Зарегистрировать пользователя */
   function handleRegister(regData) {
     apiAuth.register(regData)
       .then((res) => {
@@ -203,7 +182,6 @@ function App() {
       })
   };
 
-  /* Войти в профиль */
   function handleLogin(loginData) {
     apiAuth.login(loginData)
       .then((res) => {
@@ -220,7 +198,6 @@ function App() {
       })
   };
 
-  /* Выйти из профиля */
   function logOut() {
     setLoggedIn(false);
     setCurrentUser(defaultCurrentUser);

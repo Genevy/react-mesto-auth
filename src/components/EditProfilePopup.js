@@ -15,7 +15,6 @@ function EditProfilePopup(props) {
     setDescription(e.target.value);
   }
 
-  /* Загрузить данные пользователя в форму */
   React.useEffect(() => {
     setName(currentUser.name);
     setDescription(currentUser.about);
@@ -25,7 +24,6 @@ function EditProfilePopup(props) {
     e.preventDefault();
     
     renderLoading();
-    /* Передать значения управляемых компонентов во внешний обработчик */
     props.onUpdateUser({
       name,
       about: description,

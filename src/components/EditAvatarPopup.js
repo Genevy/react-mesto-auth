@@ -7,7 +7,6 @@ function EditAvatarPopup(props) {
   const currentUser = React.useContext(CurrentUserContext);
   const avatarRef = React.useRef(currentUser.avatar);
 
-  /* Очистить форму от предыдущей ссылки */
   React.useEffect(() => {
     avatarRef.current.value = ''
   }, [isOpen]);
