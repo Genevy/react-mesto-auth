@@ -1,6 +1,5 @@
 export const BASE_URL = ' https://auth.nomoreparties.co';
 
-/* Обработать ответ */
 function handleReply(res) {
   if (res.ok) {
     return res.json();
@@ -30,7 +29,6 @@ export function login(data) {
     .then(handleReply)
 };
 
-/* Запрос токена */
 export function checkToken (token) {
   return fetch(`${BASE_URL}/users/me`, {
     method: 'GET',

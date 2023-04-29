@@ -4,7 +4,6 @@ class Api {
     this._headers = headers;
   }
 
-  /* Обработать ответ */
   _handleReply(res) {
     if (res.ok) {
       return res.json();
@@ -12,19 +11,16 @@ class Api {
     return Promise.reject(`Ошибка: ${res.status}`);
   }
 
-  /* Загрузить данные пользователя с сервера */
   getUserInfo() {
     return fetch(`${this._url}/users/me`, { headers: this._headers })
       .then(this._handleReply)
   }
 
-  /* Загрузить все карточки с сервера */
   getAllCards() {
     return fetch(`${this._url}/cards`, { headers: this._headers })
       .then(this._handleReply)
   }
 
-  /* Редактировать профиль */
   updateUserInfo({ name, about }) {
     return fetch(`${this._url}/users/me`,
       {
@@ -35,7 +31,6 @@ class Api {
       .then(this._handleReply)
   }
 
-  /* Обновить аватар */
   updateUserAvatar({ avatar }) {
     return fetch(`${this._url}/users/me/avatar`,
       {
@@ -46,7 +41,6 @@ class Api {
       .then(this._handleReply)
   }
 
-  /* Добавить новую карточку */
   addNewCard({ name, link }) {
     return fetch(`${this._url}/cards`,
       {
@@ -57,7 +51,6 @@ class Api {
       .then(this._handleReply)
   }
 
-  /* Удалить карточку */
   deleteCard(id) {
     return fetch(`${this._url}/cards/${id}`,
       {
@@ -67,7 +60,6 @@ class Api {
       .then(this._handleReply)
   }
 
-  /* Поставить и удалить лайк */
   changeLikeCardStatus(id, isLiked) {
     if (isLiked) {
       return fetch(`${this._url}/cards/${id}/likes`,
